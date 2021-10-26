@@ -1,0 +1,89 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 3rem;
+}
+
+.run {
+	background-color: var(--purple3);
+	border-radius: 99px;
+	color: var(--white1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 5rem;
+	height: 2rem;
+	position: absolute;
+	right: 10rem;
+	cursor: pointer;
+}
+
+.run:hover {
+	background-color: var(--purple4);
+	color: #ffffff;
+}
+
+.header {
+	color: var(--white);
+}
+
+.group {
+	margin-bottom: 3rem;
+}
+
+.task {
+	background: #403452;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.06), inset -1px 1px 3px 0 rgba(255,255,255,0.09);
+	padding: 0.8rem 1rem;
+	margin: 0.5rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.task:hover {
+	background-color: var(--purple5);
+}
+
+.task-name {
+	color: var(--white1);
+	width: 10rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.ball {
+	border-radius: 99px;
+	width: 1.7rem;
+	height: 1.7rem;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.03), inset -1px 1px 3px 0 rgba(255,255,255,0.09);
+	margin: 0 0.2rem;
+	position: relative;
+}
+.ball .tooltip {
+	visibility: hidden;
+}
+.ball:hover .tooltip {
+	visibility: visible;
+}
+
+.ball-blue { background-color: var(--blue); }
+.ball-green { background-color: var(--green); }
+.ball-red { background-color: var(--red); }
+.ball-purple { background-color: var(--purple2); }
+
+.tooltip {
+	background-color: var(--purple6);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.06), inset -1px 1px 3px 0 rgba(255,255,255,0.09);
+	color: var(--white2);
+	position: absolute;
+	top: 40px;
+	padding: 1rem;
+	z-index: 999;
+	min-width: 200px;
+	display: flex;
+	flex-direction: column;
+	white-space: nowrap;
+}

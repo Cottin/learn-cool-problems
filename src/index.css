@@ -1,0 +1,65 @@
+body {
+	margin: 0;
+	font-family: 'Nunito Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-color: var(--purple);
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+
+.b { font-weight: 600; }
+
+.p1 { padding: 0.1rem; }
+.p2 { padding: 0.2rem; }
+.p3 { padding: 0.3rem; }
+.p4 { padding: 0.4rem; }
+
+.m1 { margin: 0.1rem; }
+.m2 { margin: 0.2rem; }
+.m3 { margin: 0.3rem; }
+.m4 { margin: 0.4rem; }
+
+.fw1 { font-weight: 200; }
+.fw2 { font-weight: 300; }
+.fw3 { font-weight: 400; }
+.fw4 { font-weight: 600; }
+.fw5 { font-weight: 700; }
+
+.fs1 { font-size: 0.7rem; }
+.fs2 { font-size: 0.8rem; }
+.fs3 { font-size: 0.9rem; }
+.fs4 { font-size: 1.0rem; }
+.fs5 { font-size: 1.1rem; }
+.fs6 { font-size: 1.2rem; }
+.fs7 { font-size: 1.5rem; }
+.fs8 { font-size: 1.8rem; }
+.fs9 { font-size: 2.0rem; }
+
+
+:root {
+	--purple: #352a42;
+	--purple1: #403452;
+	--purple2: #63517f;
+	--purple3: #67449E;
+	--purple4: #8E62D2;
+	--purple5: #4E3F66;
+	--purple6: #655380;
+	--white: #EEEFFE;
+	--white1: #a6a2d0;
+	--white2: #C9C6EE;
+	--blue: #5a84fc;
+	--green: #53aa68;
+	--red: #b6427a;
+}
