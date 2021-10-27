@@ -2,8 +2,16 @@
 // Write a program that takes an argument n and returns the sum of the numbers 1 to n (inclusive) but only 
 // multiples of three or five are considered in the sum, e.g. 3, 5, 6, 9, 10, 12, 15 for n=17
 export const sum1toN3and5 = (n) => {
-	// Your code here...
-	return -1
+	if (n < 1) return 'invalid'
+
+  let sum = 0
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      sum += i
+    }
+  }
+
+  return sum
 }
 
 const tests = [
