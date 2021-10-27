@@ -2,7 +2,7 @@
 // Write a function that takes a number and returns a list of its digits.
 // So for 2342 it should print [2,3,4,2].
 
-const digits = (n) => {
+export const digits = (n) => {
 	// Your code here...
 	return []
 }
