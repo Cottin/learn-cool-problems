@@ -7,7 +7,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
-  "homepage": "https://Cottin.github.io/cool-problems",
+  "homepage": "https://emmalearnscode.github.io/cool-problems",
   "type": "module",
   "devDependencies": {
     "@babel/core": "^7.15.8",
