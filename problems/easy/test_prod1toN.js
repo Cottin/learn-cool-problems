@@ -8,7 +8,7 @@ describe('prod1ToN', function () {
   it('should return 24 when n = 4', function () {
     assert.equal(prod1toN(4), 24)
   })
-  it('should return invalid if n is negative', function () {
+  it('should return invalid if n is 0 or below', function () {
     assert.equal(prod1toN(-2), 'invalid')
   })
 })
