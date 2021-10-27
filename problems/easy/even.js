@@ -3,8 +3,8 @@
 // eg. [1, 2, 3, 4, 5] -> [2, 4]
 
 const even = (xs) => {
-	// Your code here...
-	return []
+	const evens = xs.filter(num => num % 2 === 0)
+  return evens
 
 }
 
