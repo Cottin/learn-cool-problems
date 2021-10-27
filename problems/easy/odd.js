@@ -3,8 +3,8 @@
 // eg. [1, 2, 3, 4, 5] -> [1, 3, 5]
 
 export const odd = (xs) => {
-	// Your code here...
-	return []
+	const odds = xs.filter(num => num % 2 !== 0)
+  return odds
 }
 
 const tests = [
