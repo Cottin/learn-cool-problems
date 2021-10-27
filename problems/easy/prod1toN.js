@@ -1,8 +1,12 @@
 
 // Write a program that takes an argument n and returns the product of 1,…,n.
 export const prod1toN = (n) => {
-	// Your code here...
-	return -1
+	let product = 1
+  if (n < 1) return 'invalid'
+  for (let i = 1; i <= n; i++) {
+    product *= i
+  }
+  return product
 }
 
 const tests = [
