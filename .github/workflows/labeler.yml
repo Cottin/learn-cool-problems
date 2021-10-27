@@ -12,3 +12,4 @@ jobs:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         configuration-path: .github/labeler.yml      
         body-missing-regex-label: 'needs-triage'
+        enable-versioned-regex: 0
