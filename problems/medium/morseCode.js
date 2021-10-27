@@ -51,7 +51,7 @@ const morseAlphabet = {
 // eg. quick -> --.- ..- .. -.-. -.-
 // (a space should separate the mores letters in returned string, eg. ab -> .- -...  Notice the space!)
 
-const morseCode = (s) => {
+export const morseCode = (s) => {
   // Your code here...
   return ''
 }

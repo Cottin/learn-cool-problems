@@ -1,6 +1,6 @@
 
 // Write a function that computes the running total of a list.
-const totalList = (xs) => {
+export const totalList = (xs) => {
 	// Your code here...
 	return -1
 }
