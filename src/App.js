@@ -7,16 +7,16 @@ import sum1toN3and5 from '../problems/easy/sum1toN3and5'
 import prod1toN from '../problems/easy/prod1toN'
 import odd from '../problems/easy/odd'
 import even from '../problems/easy/even'
-const easy = {sum1toN, sum1toN3and5, prod1toN, odd, even}
+const easy = { sum1toN, sum1toN3and5, prod1toN, odd, even }
 
 import totalList from '../problems/medium/totalList'
 import digits from '../problems/medium/digits'
 import morseCode from '../problems/medium/morseCode'
-const medium = {totalList, digits, morseCode}
+const medium = { totalList, digits, morseCode }
 
 import equalSum from '../problems/hard/equalSum'
 import splitEvery from '../problems/hard/splitEvery'
-const hard = {equalSum, splitEvery}
+const hard = { equalSum, splitEvery }
 
 const DELAY = 30
 const INITIAL_DELAY = 300
@@ -24,7 +24,7 @@ const INITIAL_DELAY = 300
 const $ = (data, ...functions) => R.pipe(...functions)(data)
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
-const problems = {...easy, ...medium, ...hard}
+const problems = { ...easy, ...medium, ...hard }
 
 const runTest = (fn, args, expected) => {
 	const result = fn(...args)
@@ -33,18 +33,17 @@ const runTest = (fn, args, expected) => {
 }
 
 let results = $(problems, R.map((x) => R.repeat([], R.length(x))))
-const resetResults = {...results}
 
 // console.log(results)
 
 function App() {
 	const [isRunning, setIsRunning] = React.useState(false)
-	const [tick, setTick] = React.useState(0)
+	// const [tick, setTick] = React.useState(0)
 
 	const run = async () => {
 		setIsRunning(true)
 		results = $(problems, R.map((x) => R.repeat([], R.length(x))))
-		setTick(Date.now())
+		// setTick(Date.now())
 		await sleep(INITIAL_DELAY)
 
 		for (let problemName in problems) {
@@ -53,7 +52,7 @@ function App() {
 				const [fn, args, expected] = problemTests[idx]
 				const [success, result] = runTest(fn, args, expected)
 				results[problemName][idx] = [success, result, expected]
-				setTick(Date.now())
+				// setTick(Date.now())
 				await sleep(DELAY)
 			}
 		}
@@ -95,10 +94,10 @@ function App() {
 				</div>
 			</div>
 		</div>
-	);
+	)
 }
 
-function Task({name, tests}) {
+function Task({ name, tests }) {
 	return (
 		<div className="task">
 			<div className="task-name fw5 fs6">{name}</div>
@@ -119,11 +118,11 @@ function Task({name, tests}) {
 					</div>
 				)
 			})}
-			
+
 		</div>
 	)
 }
 
 
-export default App;
+export default App
 
