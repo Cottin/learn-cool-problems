@@ -4,8 +4,13 @@
 
 export const even = (xs) => {
 	// Your code here...
-	return []
-
+	const evenNumbers = []
+	for (let current of xs) {
+		if (Number.isInteger(current/2)) {
+			evenNumbers.push(current)
+		}
+	}
+	return evenNumbers
 }
 
 const tests = [
