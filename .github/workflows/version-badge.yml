@@ -1,0 +1,6 @@
+uses: emibcn/badge-action@v1.2.1
+with:
+  label: 'Version'
+  status: npm run version
+  color: 'blue,555,daf'
+  path: '.github/badges/coverage.svg'
