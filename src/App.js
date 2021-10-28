@@ -1,3 +1,5 @@
+/*eslint no-unused-vars: "off"*/
+
 import React from 'react'
 import * as R from 'ramda'
 import './App.css'
