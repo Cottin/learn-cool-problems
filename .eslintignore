@@ -1,0 +1,9 @@
+.github/
+dist/
+node_modules/
+package.json
+package-lock.json
+README.md
+webpack.config.js
+.babelrc
+.eslintrc.cjs
