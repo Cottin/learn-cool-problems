@@ -3,9 +3,14 @@
 // So for 2342 it should print [2,3,4,2].
 
 export const digits = (n) => {
-	console.log(n)
-	// Your code here...
-	return []
+	const numberArr = []
+	const arr = Array.from(n + '')
+
+	arr.forEach(char => {
+		numberArr.push(+char)
+	})
+
+	return numberArr
 }
 
 const tests = [
