@@ -21,5 +21,10 @@ module.exports = {
         "semi": ["warn", "never"],
         "quotes": ["warn", "single"],
         "react/prop-types": "off"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }
