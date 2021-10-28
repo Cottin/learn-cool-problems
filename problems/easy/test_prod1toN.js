@@ -1,7 +1,7 @@
 import assert from 'assert'
 import { prod1toN } from './prod1toN.js'
 
-describe("prod1toN", () => {
+describe('prod1toN', () => {
   it('returns the product of 1,...,n', () => {
     const response = prod1toN(9)
     assert.equal(response, 362880)

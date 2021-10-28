@@ -34,16 +34,14 @@ const runTest = (fn, args, expected) => {
 
 let results = $(problems, R.map((x) => R.repeat([], R.length(x))))
 
-// console.log(results)
-
 function App() {
 	const [isRunning, setIsRunning] = React.useState(false)
-	// const [tick, setTick] = React.useState(0)
+	const [tick, setTick] = React.useState(0)
 
 	const run = async () => {
 		setIsRunning(true)
 		results = $(problems, R.map((x) => R.repeat([], R.length(x))))
-		// setTick(Date.now())
+		setTick(Date.now())
 		await sleep(INITIAL_DELAY)
 
 		for (let problemName in problems) {
@@ -52,7 +50,7 @@ function App() {
 				const [fn, args, expected] = problemTests[idx]
 				const [success, result] = runTest(fn, args, expected)
 				results[problemName][idx] = [success, result, expected]
-				// setTick(Date.now())
+				setTick(Date.now())
 				await sleep(DELAY)
 			}
 		}
@@ -63,11 +61,11 @@ function App() {
 	// console.log(JSON.stringify(results, null, 2))
 
 	return (
-		<div className="App">
+		<div className='App'>
 			<div>
-				{!isRunning && <div className="run fw5 fs4" onClick={run}>RUN</div>}
-				<div className="group">
-					<div className="header fw5 fs7">Easy</div>
+				{!isRunning && <div className='run fw5 fs4' onClick={run}>RUN</div>}
+				<div className='group'>
+					<div className='header fw5 fs7'>Easy</div>
 					<div>
 						{Object.entries(easy).map(([name, tests]) => {
 							return <Task key={name} name={name} tests={tests} />
@@ -75,8 +73,8 @@ function App() {
 					</div>
 				</div>
 
-				<div className="group">
-					<div className="header fw5 fs7">Medium</div>
+				<div className='group'>
+					<div className='header fw5 fs7'>Medium</div>
 					<div>
 						{Object.entries(medium).map(([name, tests]) => {
 							return <Task key={name} name={name} tests={tests} />
@@ -84,8 +82,8 @@ function App() {
 					</div>
 				</div>
 
-				<div className="group">
-					<div className="header fw5 fs7">Hard</div>
+				<div className='group'>
+					<div className='header fw5 fs7'>Hard</div>
 					<div>
 						{Object.entries(hard).map(([name, tests]) => {
 							return <Task key={name} name={name} tests={tests} />
@@ -99,8 +97,8 @@ function App() {
 
 function Task({ name, tests }) {
 	return (
-		<div className="task">
-			<div className="task-name fw5 fs6">{name}</div>
+		<div className='task'>
+			<div className='task-name fw5 fs6'>{name}</div>
 			{tests.map((test, idx) => {
 				let color = 'purple'
 				const [success, result, expected] = results[name][idx]
@@ -110,7 +108,7 @@ function Task({ name, tests }) {
 
 				return (
 					<div key={idx} className={`ball ball-${color}`}>
-						<div className="tooltip">
+						<div className='tooltip'>
 							{result && <code>Result: {JSON.stringify(result, null, 2)}</code>}
 							{expected && <code>Expected: {JSON.stringify(expected, null, 2)}</code>}
 							{!result && !expected && 'Test not yet run'}

@@ -1,7 +1,7 @@
 import assert from 'assert'
 import { sum1toN } from './sum1toN.js'
 
-describe("sum1toN", () => {
+describe('sum1toN', () => {
   it('returns the sum of 1,...,n', () => {
     const response = sum1toN(80)
     assert.equal(response, 3240)
