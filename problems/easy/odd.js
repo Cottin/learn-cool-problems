@@ -3,8 +3,9 @@
 // eg. [1, 2, 3, 4, 5] -> [1, 3, 5]
 
 export const odd = (xs) => {
-	// Your code here...
-	return []
+
+	return xs.filter(n => n & 2 !== 0)
+
 }
 
 const tests = [
