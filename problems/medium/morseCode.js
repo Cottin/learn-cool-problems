@@ -47,11 +47,14 @@ const morseAlphabet = {
   ')': '-.--.-'
 }
 
+console.log(morseAlphabet)
+
 // Write a program that automatically converts English text to Morse code and returns a string
 // eg. quick -> --.- ..- .. -.-. -.-
 // (a space should separate the mores letters in returned string, eg. ab -> .- -...  Notice the space!)
 
 export const morseCode = (s) => {
+  console.log(s)
   // Your code here...
   return ''
 }

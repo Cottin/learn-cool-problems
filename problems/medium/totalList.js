@@ -1,6 +1,7 @@
 
 // Write a function that computes the running total of a list.
 export const totalList = (xs) => {
+	console.log(xs)
 	// Your code here...
 	return -1
 }
