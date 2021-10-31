@@ -3,7 +3,12 @@
 // eg. 1,2,3,4,5,6 and 6 -> [[2, 4], [1, 5]]
 export const equalSum = (xs, n) => {
 	// Your code here...
-	return []
+	const list = []
+    for (let i = 0; i < xs.length; i++)
+        for (let j = i + 1; j < xs.length; j++)
+            if (xs[i] + xs[j] == n)
+                list.push([xs[i], xs[j]])
+    return list
 }
 
 const tests = [
