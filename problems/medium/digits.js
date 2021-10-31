@@ -4,7 +4,9 @@
 
 export const digits = (n) => {
 	// Your code here...
-	return []
+	const list = []
+	n.toString().split("").map(n => list.push(Number(n)))
+	return list
 }
 
 const tests = [
