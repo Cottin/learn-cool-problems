@@ -2,9 +2,16 @@
 // Write a function that returns the odd numbers in a given list.
 // eg. [1, 2, 3, 4, 5] -> [1, 3, 5]
 
+
 export const odd = (xs) => {
 	// Your code here...
-	return []
+	const oddNumbers = []
+	for (let current of xs) {
+		if (!Number.isInteger(current/2)) {
+			oddNumbers.push(current)
+		}
+	}
+	return oddNumbers
 }
 
 const tests = [
