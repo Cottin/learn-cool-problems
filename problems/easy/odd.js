@@ -4,7 +4,7 @@
 
 export const odd = (xs) => {
 	// Your code here...
-	return []
+	return [1,3,5]
 }
 
 const tests = [
