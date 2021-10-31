@@ -4,7 +4,11 @@
 
 export const odd = (xs) => {
 	// Your code here...
-	return []
+	const list = []
+	for(let num of xs){
+		num % 2 !== 0 ? list.push(num) : ''
+	}
+	return list
 }
 
 const tests = [
