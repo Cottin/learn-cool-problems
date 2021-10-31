@@ -1,8 +1,9 @@
 
 // Write a function that computes the running total of a list.
 export const totalList = (xs) => {
-	// Your code here...
-	return -1
+	let sum = 0
+	for(let n of xs) sum += n
+	return sum
 }
 
 const tests = [
