@@ -4,7 +4,7 @@
 
 export const odd = (xs) => {
 	// Your code here...
-	return [1,3,5]
+	return xs.filter((i) => i % 2 !== 0);
 }
 
 const tests = [
