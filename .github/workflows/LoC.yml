@@ -12,6 +12,6 @@ jobs:
         with:
           debug: true
           directory: ./
-          badge: ./LoC/badge.svg
+          badge: ./LoC.yml/badge.svg
           patterns: '*.js'  # Patterns in the format of a '.gitignore' file, separated by pipes.
           ignore: 'node_modules'
