@@ -7,4 +7,4 @@ Otherwise expore this repo on your own. Good luck!😊
 
 [![Build and Deploy](https://github.com/SimonSoold/learn-cool-problems/actions/workflows/build-and-deploy.js.yml/badge.svg)](https://github.com/SimonSoold/learn-cool-problems/actions/workflows/build-and-deploy.js.yml)
 
-[![LoC](https://github.com/SimonSoold/learn-cool-problems/actions/workflows/LoC.yml/badge.svg)](https://github.com/SimonSoold/learn-cool-problems/actions/workflows/LoC.yml)
+[![LoC](https://github.com/SimonSoold/learn-cool-problems/actions/workflows/LoC.yml/badge.sv)](https://github.com/SimonSoold/learn-cool-problems/actions/workflows/LoC.yml)
