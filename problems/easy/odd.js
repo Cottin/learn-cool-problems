@@ -6,7 +6,8 @@ export const odd = (xs) => {
   for (let num of xs) {
     num % 2 !== 0 ? list.push(num) : "";
   }
-  return list;
+  //   return list;
+  return [];
 };
 
 const tests = [
